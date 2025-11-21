@@ -161,411 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Comprehensive knowledge base for Pharmacia
   const knowledgeBase = {
-    // Company information
-    about: {
-      patterns: [
-        "what is pharmacia",
-        "about pharmacia",
-        "company information",
-        "tell me about pharmacia",
-      ],
-      responses: [
-        "Pharmacia is a distinguished pharmaceutical and medical supplies company with over 25 years of experience in delivering premium-quality medicines and medical supplies. We're committed to enhancing well-being through trusted healthcare products and personalized service.",
-      ],
-    },
-    headquarters: {
-      patterns: [
-        "where is pharmacia",
-        "headquarters",
-        "location",
-        "where are you located",
-      ],
-      responses: [
-        "Pharmacia is headquartered in Kuwait. Our address is: Building No. 12, Block 8, Shuwaikh Industrial Area, Kuwait City, Kuwait.",
-      ],
-    },
-    established: {
-      patterns: [
-        "when was pharmacia established",
-        "founding year",
-        "when did pharmacia start",
-        "how old is pharmacia",
-      ],
-      responses: [
-        "Pharmacia was established in 1998, bringing over 25 years of experience in the pharmaceutical industry.",
-      ],
-    },
-    experience: {
-      patterns: [
-        "how much experience",
-        "years of experience",
-        "how long has pharmacia been",
-        "industry experience",
-      ],
-      responses: [
-        "Pharmacia has over 25 years of experience in the pharmaceutical industry, delivering premium-quality medicines and medical supplies with a commitment to excellence.",
-      ],
-    },
-    mission: {
-      patterns: ["mission", "what is your mission", "company mission"],
-      responses: [
-        "Pharmacia's mission is to enhance the well-being of individuals by providing trusted healthcare products coupled with compassionate and personalized service.",
-      ],
-    },
-    vision: {
-      patterns: ["vision", "what is your vision", "company vision"],
-      responses: [
-        "Pharmacia's vision is to revolutionize healthcare by integrating cutting-edge technology and maintaining the highest standards of integrity and professionalism.",
-      ],
-    },
-    values: {
-      patterns: [
-        "core values",
-        "values",
-        "what are your values",
-        "company values",
-      ],
-      responses: [
-        "Pharmacia's core values include: trust, innovation, excellence, compassion, integrity, and commitment to health and wellness.",
-      ],
-    },
-
-    // Products information
-    products: {
-      patterns: [
-        "products",
-        "what products",
-        "offer",
-        "medicines",
-        "medical supplies",
-      ],
-      responses: [
-        "Pharmacia offers a comprehensive range of pharmaceutical products including cardiovascular medications, diabetes care supplies, vaccines & immunizations, mental health aids, wound care supplies, and nutrition supplements.",
-      ],
-    },
-    cardiovascular: {
-      patterns: [
-        "cardiovascular",
-        "heart medications",
-        "hypertension",
-        "blood pressure",
-      ],
-      responses: [
-        "Yes, we offer premium cardiovascular medications for hypertension and heart conditions. These are expertly formulated to provide effective, reliable care that enhances heart health and supports healthy circulation.",
-      ],
-    },
-    vaccines: {
-      patterns: ["vaccines", "immunizations", "vaccinations"],
-      responses: [
-        "We provide WHO-approved vaccines equipped with advanced temperature-controlled delivery systems to ensure optimal stability and potency throughout the supply chain.",
-      ],
-    },
-    wound_care: {
-      patterns: ["wound care", "bandages", "dressings", "wound treatment"],
-      responses: [
-        "We offer premium wound care supplies including sterile dressings, durable bandages, and advanced wound care treatment products designed to promote optimal healing and prevent infection.",
-      ],
-    },
-    diabetes: {
-      patterns: ["diabetes", "diabetes care", "blood sugar", "glucose"],
-      responses: [
-        "Yes, we provide comprehensive diabetes care supplies and specialized medications designed to ensure accurate and consistent blood sugar control and improved health outcomes.",
-      ],
-    },
-    mental_health: {
-      patterns: [
-        "mental health",
-        "mental wellness",
-        "emotional stability",
-        "psychological health",
-      ],
-      responses: [
-        "We offer supportive aids and supplements formulated with advanced ingredients to promote optimal mental wellness, enhance emotional stability, and support comprehensive psychological health.",
-      ],
-    },
-    supplements: {
-      patterns: [
-        "nutrition",
-        "supplements",
-        "vitamins",
-        "minerals",
-        "nutritional",
-      ],
-      responses: [
-        "We provide high-quality vitamins, minerals, and essential nutrients formulated with advanced bioavailable ingredients to support balanced nutrition and promote sustained long-term wellness.",
-      ],
-    },
-    view_products: {
-      patterns: [
-        "view products",
-        "see products",
-        "product catalog",
-        "all products",
-      ],
-      responses: [
-        "You can view all our products on the 'Products' section of our website. We have detailed information about each product including specifications and usage guidelines.",
-      ],
-    },
-    approved: {
-      patterns: [
-        "approved",
-        "who approved",
-        "fda",
-        "quality approved",
-        "certified products",
-      ],
-      responses: [
-        "All Pharmacia products are WHO-certified and meet the highest quality standards. Our medications undergo rigorous testing for safety and efficacy.",
-      ],
-    },
-    international: {
-      patterns: [
-        "international",
-        "globally",
-        "worldwide",
-        "available countries",
-      ],
-      responses: [
-        "Yes, Pharmacia products are available internationally. We have a trusted supply chain with delivery across multiple regions and countries.",
-      ],
-    },
-    datasheets: {
-      patterns: [
-        "datasheets",
-        "brochures",
-        "product information",
-        "technical specifications",
-      ],
-      responses: [
-        "Yes, we provide detailed product datasheets and brochures for all our products. You can find them on our website or contact our support team for specific product information.",
-      ],
-    },
-
-    // Why choose Pharmacia
-    why_choose: {
-      patterns: ["why choose", "why pharmacia", "advantages", "benefits"],
-      responses: [
-        "You should choose Pharmacia for our: 1) 25+ years of experience 2) Quality assured products 3) Global reach 4) Advanced technology 5) Customer support 6) Safety & compliance standards.",
-      ],
-    },
-    global_reach: {
-      patterns: [
-        "global reach",
-        "international presence",
-        "worldwide delivery",
-      ],
-      responses: [
-        "Yes, Pharmacia has a trusted supply chain with delivery across multiple regions and countries, ensuring our products reach customers worldwide.",
-      ],
-    },
-    quality_assured: {
-      patterns: ["quality assured", "quality products", "high quality"],
-      responses: [
-        "Absolutely. All our products are WHO-approved, rigorously tested medicines and supplies meeting the highest standards of quality and safety.",
-      ],
-    },
-    customer_support: {
-      patterns: ["customer support", "support", "help", "assistance"],
-      responses: [
-        "Yes, we provide expert guidance and after-sales support by industry professionals. Our customer service team is available to assist you with any questions or concerns.",
-      ],
-    },
-    technology: {
-      patterns: [
-        "advanced technology",
-        "technology",
-        "innovation",
-        "modern systems",
-      ],
-      responses: [
-        "Pharmacia utilizes modern automation and temperature-controlled delivery systems to ensure product integrity and efficient service delivery.",
-      ],
-    },
-    experience_years: {
-      patterns: ["25 years", "more than 25 years", "over 25 years"],
-      responses: [
-        "Yes, Pharmacia has a long-standing legacy and expertise in healthcare with over 25 years of experience in the pharmaceutical industry.",
-      ],
-    },
-    compliance: {
-      patterns: [
-        "compliance",
-        "safety standards",
-        "regulatory",
-        "quality standards",
-      ],
-      responses: [
-        "Pharmacia follows strict safety and compliance standards with reliable supplies and regulatory compliance in every shipment. We adhere to all international pharmaceutical regulations.",
-      ],
-    },
-
-    // Expert team
-    experts: {
-      patterns: [
-        "experts",
-        "team",
-        "professionals",
-        "specialists",
-        "our experts",
-        "who are your experts",
-      ],
-      responses: [
-        "Our expert team includes: Dr. Arjun Singh (Chief Medical Officer), Mr. Sameer Verma (Pharmaceutical Analyst), and Mr. Rakesh Sharma (Supply Chain Manager). These dedicated professionals drive innovation, quality, and compassionate care at Pharmacia.",
-      ],
-    },
-    dr_arjun: {
-      patterns: ["dr arjun", "arjun singh", "chief medical officer"],
-      responses: [
-        "Dr. Arjun Singh is our Chief Medical Officer. He ensures that all our products meet the highest medical standards and provides expert guidance on healthcare solutions. With years of experience in the medical field, he oversees our product quality and medical compliance.",
-      ],
-    },
-    sameer_verma: {
-      patterns: ["sameer verma", "pharmaceutical analyst"],
-      responses: [
-        "Mr. Sameer Verma is our Pharmaceutical Analyst. He is responsible for analyzing and ensuring the quality and efficacy of our pharmaceutical products. His expertise ensures that all our medications meet stringent quality standards before reaching customers.",
-      ],
-    },
-    rakesh_sharma: {
-      patterns: ["rakesh sharma", "supply chain manager"],
-      responses: [
-        "Mr. Rakesh Sharma is our Supply Chain Manager. He oversees the efficient distribution of our products, ensuring timely delivery while maintaining quality standards throughout the supply chain. His management ensures our products reach customers in perfect condition.",
-      ],
-    },
-    quality_team: {
-      patterns: ["quality team", "who ensures quality", "quality control"],
-      responses: [
-        "Our dedicated quality assurance team, led by our Pharmaceutical Analyst Mr. Sameer Verma, ensures all products meet stringent quality standards through rigorous testing and compliance checks. We maintain the highest quality control measures at every stage.",
-      ],
-    },
-    team_experience: {
-      patterns: ["team experience", "experienced team", "qualified team"],
-      responses: [
-        "Our team members are highly experienced professionals with extensive backgrounds in pharmaceuticals, healthcare, and supply chain management. Each expert brings years of industry experience, ensuring expert service at every level of our operations.",
-      ],
-    },
-
-    // Client testimonials
-    testimonials: {
-      patterns: [
-        "testimonials",
-        "reviews",
-        "client feedback",
-        "what clients say",
-        "customer reviews",
-        "what customers say",
-      ],
-      responses: [
-        "Our clients consistently praise Pharmacia for our product quality and professional service. Here's what some of them say: 'The team at PHARMACIA consistently delivers top-notch medical supplies with professionalism and care.' - Dr. Arjun Singh, Chief Medical Officer, City Hospital",
-      ],
-    },
-    client_reviews: {
-      patterns: [
-        "customer reviews",
-        "ratings",
-        "feedback",
-        "testimonials page",
-      ],
-      responses: [
-        "We have numerous positive customer reviews highlighting our product quality and service. Rajesh Kumar, Procurement Manager at Health Network says: 'The team at PHARMACIA understands the critical nature of medical supplies. Their responsive customer service and quality products make them our preferred partner.'",
-      ],
-    },
-    more_testimonials: {
-      patterns: ["more testimonials", "other reviews", "additional feedback"],
-      responses: [
-        "We're proud of our client feedback. Rahul Singh, Director of Wellness Group notes: 'We trust PHARMACIA for their innovative solutions and reliable medical supplies. Their commitment to patient wellbeing and professional support has set a new standard in healthcare partnerships.' Dr. Aman Verma, Senior Physician at Metro Clinic adds: 'PHARMACIA consistently delivers high-quality products with outstanding attention to detail.'",
-      ],
-    },
-
-    // Certifications
-    certifications: {
-      patterns: ["certifications", "certified", "accreditations", "approvals"],
-      responses: [
-        "Pharmacia holds multiple certifications including WHO-GMP, ISO, and other international quality certifications. Our products meet the highest global standards for pharmaceutical products.",
-      ],
-    },
-    who_fda_iso: {
-      patterns: ["who", "fda", "iso", "gmp", "who-gmp"],
-      responses: [
-        "Yes, Pharmacia is WHO-GMP certified and meets FDA and ISO standards. We adhere to strict quality control measures and international regulatory requirements.",
-      ],
-    },
-    certification_proof: {
-      patterns: [
-        "proof",
-        "see certifications",
-        "certification documents",
-        "verification",
-      ],
-      responses: [
-        "You can view our certifications on the 'Certifications' section of our website. For specific certification documents, please contact our support team.",
-      ],
-    },
-
-    // Contact & support
-    contact: {
-      patterns: ["contact", "how to contact", "get in touch", "reach us"],
-      responses: [
-        "You can contact Pharmacia through: Phone: +965 1234 5678, Email: info@pharmacia.com, or by visiting our headquarters at Building No. 12, Block 8, Shuwaikh Industrial Area, Kuwait City, Kuwait.",
-      ],
-    },
-    contact_form: {
-      patterns: ["contact form", "online form", "website form"],
-      responses: [
-        "Yes, we have a contact form on our website. You can find it in the 'Contact Us' section where you can submit your inquiries directly.",
-      ],
-    },
-    support_hours: {
-      patterns: ["24x7", "24/7", "support hours", "availability"],
-      responses: [
-        "Our customer support is available during business hours. For urgent matters outside these hours, please call our emergency line which is available 24/7 for critical issues.",
-      ],
-    },
-    emergency: {
-      patterns: ["emergency", "urgent", "critical", "immediate help"],
-      responses: [
-        "For emergency support, please call our 24/7 emergency line at +965 1234 5678 (press 1 for emergencies). Our team will provide immediate assistance for critical situations.",
-      ],
-    },
-
-    // General/Other
-    operations: {
-      patterns: [
-        "operate globally",
-        "international operations",
-        "countries active",
-      ],
-      responses: [
-        "Yes, Pharmacia operates globally with presence in multiple countries. We serve customers across the Middle East, Asia, Africa, and beyond with our quality pharmaceutical products.",
-      ],
-    },
-    countries: {
-      patterns: [
-        "which countries",
-        "where do you operate",
-        "locations",
-        "regions",
-      ],
-      responses: [
-        "Pharmacia is active in multiple countries including Kuwait, other GCC countries, and various international markets. We have a growing global presence with distribution networks across several regions.",
-      ],
-    },
-    product_details: {
-      patterns: [
-        "product details",
-        "more information",
-        "specific product",
-        "technical details",
-      ],
-      responses: [
-        "For detailed information about a specific product, please visit our Products page on the website or contact our support team with the product name for comprehensive details.",
-      ],
-    },
-    catalog: {
-      patterns: ["catalog", "download catalog", "product catalog", "brochure"],
-      responses: [
-        "You can download our complete product catalog from the 'Resources' section of our website. Alternatively, you can contact us to receive a digital or physical copy.",
-      ],
-    },
+    // Enhanced Greetings with more human-like interactions
     greetings: {
       patterns: [
         "hello",
@@ -576,21 +172,457 @@ document.addEventListener("DOMContentLoaded", function () {
         "hi there",
         "hello there",
         "greetings",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "morning",
+        "afternoon",
+        "evening",
+        "hey pharmacia",
+        "hi pharmacia",
+        "hello pharmacia",
+        "sup",
+        "what's up",
+        "yo",
+        "hi team",
+        "hello team",
       ],
-      responses: ["Hello! Welcome to Pharmacia. How can we assist you today?"],
+      responses: [
+        "Hello! Welcome to Pharmacia Kuwait. How may I assist you with our pharmaceutical products and services today?",
+        "Good day! Thank you for contacting Pharmacia. How can we support your healthcare needs today?",
+        "Welcome to Pharmacia! We're here to provide you with premium pharmaceutical solutions. How can we help you?",
+        "Hello! It's a pleasure to connect with you. How may Pharmacia assist you today?",
+      ],
     },
 
-    // Default response
+    // Enhanced How are you responses
+    how_are_you: {
+      patterns: [
+        "how are you",
+        "how are you doing",
+        "how's it going",
+        "how do you do",
+        "how are things",
+        "how is everything",
+        "what's going on",
+        "how have you been",
+        "how are you today",
+        "how are you doing today",
+        "how is your day",
+      ],
+      responses: [
+        "Thank you for asking! We're doing well and ready to assist you with all your pharmaceutical needs. How can we help you today?",
+        "We're excellent, thank you! Ready to provide you with the best pharmaceutical service. What can we do for you?",
+        "Doing great! Always pleased to connect with our valued clients. How may Pharmacia assist you?",
+        "We're doing very well, thank you for asking! How can we support your healthcare requirements today?",
+      ],
+    },
+
+    // Enhanced farewell responses
+    farewell: {
+      patterns: [
+        "bye",
+        "goodbye",
+        "see you",
+        "see ya",
+        "farewell",
+        "take care",
+        "have a good day",
+        "have a nice day",
+        "thanks bye",
+        "thank you bye",
+        "that's all",
+        "that will be all",
+        "no more questions",
+        "i'm done",
+        "talk to you later",
+        "catch you later",
+        "until next time",
+        "signing off",
+      ],
+      responses: [
+        "Thank you for contacting Pharmacia! We're here whenever you need pharmaceutical assistance. Have a wonderful day!",
+        "It was our pleasure to assist you. For any future pharmaceutical needs, remember Pharmacia is here for you. Stay healthy!",
+        "Goodbye! Thank you for choosing Pharmacia. We look forward to serving your healthcare needs again soon.",
+        "Have a great day! Remember, Pharmacia is always here to support your wellness journey with quality products.",
+      ],
+    },
+
+    // Enhanced gratitude responses
+    thanks: {
+      patterns: [
+        "thanks",
+        "thank you",
+        "thank you so much",
+        "thanks a lot",
+        "appreciate it",
+        "much appreciated",
+        "thank you very much",
+        "thanks for your help",
+        "thank you for assistance",
+        "grateful",
+        "thanks a bunch",
+        "thank you kindly",
+        "many thanks",
+      ],
+      responses: [
+        "You're most welcome! It's our pleasure to assist you with your pharmaceutical needs.",
+        "Thank you for choosing Pharmacia! We're always here to provide you with quality healthcare solutions.",
+        "You're very welcome! Don't hesitate to reach out if you need any further assistance with our products.",
+        "Our pleasure! At Pharmacia, we're committed to serving your healthcare requirements with excellence.",
+      ],
+    },
+
+    // Company information - Enhanced
+    about: {
+      patterns: [
+        "what is pharmacia",
+        "about pharmacia",
+        "company information",
+        "tell me about pharmacia",
+        "who is pharmacia",
+        "describe pharmacia",
+        "what does pharmacia do",
+        "pharmacia overview",
+        "company background",
+        "about your company",
+        "tell me about your company",
+        "what kind of company",
+        "pharmacia details",
+        "company profile",
+        "business overview",
+      ],
+      responses: [
+        "Pharmacia is a distinguished pharmaceutical and medical supplies company with over 25 years of excellence in delivering premium-quality medicines and medical supplies. Headquartered in Kuwait, we are committed to enhancing community well-being through trusted healthcare products coupled with personalized, compassionate service.",
+        "With a legacy spanning more than 25 years, Pharmacia stands as a premier pharmaceutical company in Kuwait, specializing in comprehensive medical solutions. Our commitment extends beyond products to building lasting healthcare partnerships through innovation, quality, and exceptional service standards.",
+      ],
+    },
+
+    headquarters: {
+      patterns: [
+        "where is pharmacia",
+        "headquarters",
+        "location",
+        "where are you located",
+        "your address",
+        "physical location",
+        "office location",
+        "where is your office",
+        "company location",
+        "where are you based",
+        "main office",
+        "corporate office",
+        "visit us",
+        "come to your office",
+        "where to find you",
+      ],
+      responses: [
+        "Pharmacia is proudly headquartered in Kuwait. Our central office is located at: Building No. 12, Block 8, Shuwaikh Industrial Area, Kuwait City, Kuwait. We welcome professional visits and consultations.",
+        "Our headquarters are situated in the strategic Shuwaikh Industrial Area in Kuwait City: Building No. 12, Block 8. This location allows us to efficiently serve our clients across the region with premium pharmaceutical products.",
+      ],
+    },
+
+    established: {
+      patterns: [
+        "when was pharmacia established",
+        "founding year",
+        "when did pharmacia start",
+        "how old is pharmacia",
+        "year established",
+        "when founded",
+        "start date",
+        "company founding",
+        "establishment date",
+        "since when",
+        "years in business",
+        "business start",
+        "incorporation date",
+      ],
+      responses: [
+        "Pharmacia was established in 1998, bringing over 25 years of trusted experience and expertise in the pharmaceutical industry. Our long-standing presence reflects our commitment to sustainable healthcare solutions.",
+        "Since our establishment in 1998, Pharmacia has been serving the healthcare community with distinction for over two decades, building a reputation for reliability and excellence in pharmaceutical distribution.",
+      ],
+    },
+
+    // Enhanced Products information
+    products: {
+      patterns: [
+        "products",
+        "what products",
+        "offer",
+        "medicines",
+        "medical supplies",
+        "what do you sell",
+        "product range",
+        "your products",
+        "offerings",
+        "medical products",
+        "pharmaceutical products",
+        "what items",
+        "inventory",
+        "product portfolio",
+        "catalogue items",
+        "available products",
+      ],
+      responses: [
+        "Pharmacia offers a comprehensive portfolio of premium pharmaceutical products including:\n\n• Cardiovascular medications and heart care solutions\n• Diabetes management supplies and specialized medications\n• WHO-approved vaccines & immunizations\n• Mental health and wellness aids\n• Advanced wound care supplies and dressings\n• Nutritional supplements and vitamins\n\nEach product category is carefully selected to meet the highest quality standards and address diverse healthcare needs.",
+        "Our product portfolio encompasses:\n\n🏥 **Cardiovascular Care**: Hypertension and heart condition medications\n💉 **Diabetes Management**: Blood sugar control supplies\n🛡️ **Vaccines**: Temperature-controlled immunizations\n🧠 **Mental Wellness**: Emotional stability and psychological health aids\n🩹 **Wound Care**: Sterile dressings and advanced treatment products\n🍃 **Nutrition**: High-quality vitamins and supplements\n\nAll products maintain WHO certification and rigorous quality assurance.",
+      ],
+    },
+
+    // Enhanced Contact information
+    contact: {
+      patterns: [
+        "contact",
+        "how to contact",
+        "get in touch",
+        "reach us",
+        "contact information",
+        "phone number",
+        "email address",
+        "call us",
+        "email us",
+        "contact details",
+        "reach customer service",
+        "support contact",
+        "sales contact",
+        "general inquiry",
+        "phone contact",
+        "email contact",
+        "office phone",
+        "main contact",
+      ],
+      responses: [
+        "We'd be delighted to connect with you. Here are our primary contact channels:\n\n📞 **Phone**: +965 1234 5678\n📧 **Email**: info@pharmacia.com\n🏢 **Address**: Building No. 12, Block 8, Shuwaikh Industrial Area, Kuwait City, Kuwait\n\nOur professional team is ready to assist with your pharmaceutical requirements during business hours.",
+        "For comprehensive support, please reach us through:\n\n• **Telephone**: +965 1234 5678 (Main Office)\n• **Email**: info@pharmacia.com (General Inquiries)\n• **Location**: Shuwaikh Industrial Area, Kuwait City\n\nWe recommend scheduling appointments for detailed product consultations to ensure we provide you with undivided attention.",
+      ],
+    },
+
+    // Enhanced website navigation
+    website: {
+      patterns: [
+        "website",
+        "your website",
+        "online",
+        "web page",
+        "site",
+        "pharmacia website",
+        "visit website",
+        "check website",
+        "go to website",
+        "web address",
+        "url",
+        "online presence",
+        "digital platform",
+        "company website",
+        "main website",
+      ],
+      responses: [
+        "Our comprehensive website is available at: https://mustafa-lowna.github.io/Pharmacia-Kuwait/\n\nYou'll find detailed information about our products, company background, expert team, certifications, and much more. The website is designed to provide you with all necessary pharmaceutical information in an accessible format.",
+        "For complete details about Pharmacia's offerings, please visit our official website: https://mustafa-lowna.github.io/Pharmacia-Kuwait/\n\nThe site features our full product catalog, company certifications, team profiles, and valuable healthcare resources to support your decision-making process.",
+      ],
+    },
+
+    // Enhanced services information
+    services: {
+      patterns: [
+        "services",
+        "what services",
+        "service offerings",
+        "help provided",
+        "assistance offered",
+        "support services",
+        "professional services",
+        "additional services",
+        "value added services",
+        "customer services",
+        "service portfolio",
+        "how you help",
+        "service range",
+      ],
+      responses: [
+        "At Pharmacia, we provide comprehensive pharmaceutical services including:\n\n• Premium quality medicine distribution\n• Medical supplies procurement and delivery\n• Professional healthcare consultation\n• Product information and technical support\n• Supply chain management solutions\n• Regulatory compliance guidance\n• After-sales support and maintenance\n\nOur services are designed to ensure complete healthcare solution delivery.",
+        "Pharmacia's service portfolio encompasses:\n\n📦 **Distribution**: Reliable supply of pharmaceuticals\n💊 **Product Sourcing**: Access to quality medical supplies\n👨‍⚕️ **Expert Consultation**: Professional healthcare guidance\n🛡️ **Quality Assurance**: Rigorous product verification\n🔗 **Supply Chain**: Efficient delivery systems\n📋 **Regulatory Support**: Compliance and certification assistance\n\nEach service is delivered with our signature commitment to excellence.",
+      ],
+    },
+
+    // Enhanced quality assurance
+    quality: {
+      patterns: [
+        "quality",
+        "quality assurance",
+        "quality control",
+        "quality standards",
+        "how ensure quality",
+        "product quality",
+        "quality measures",
+        "quality processes",
+        "quality certification",
+        "quality management",
+        "quality system",
+        "quality guarantee",
+        "quality promise",
+      ],
+      responses: [
+        "Quality is the cornerstone of Pharmacia's operations. We maintain:\n\n✅ WHO-GMP certification across all products\n✅ Rigorous testing protocols for safety and efficacy\n✅ International quality standards compliance\n✅ Continuous quality monitoring systems\n✅ Temperature-controlled supply chain integrity\n✅ Batch-to-batch consistency verification\n\nEvery product undergoes multiple quality checkpoints before reaching our clients.",
+        "Our quality assurance framework includes:\n\n• **International Certifications**: WHO-GMP, ISO standards\n• **Testing Protocols**: Comprehensive safety and efficacy testing\n• **Supply Chain Controls**: Temperature and handling monitoring\n• **Documentation**: Complete batch records and traceability\n• **Compliance**: Adherence to international regulatory requirements\n• **Continuous Improvement**: Regular quality system enhancements\n\nThis ensures every Pharmacia product meets the highest pharmaceutical standards.",
+      ],
+    },
+
+    // Enhanced pricing information
+    pricing: {
+      patterns: [
+        "price",
+        "pricing",
+        "cost",
+        "how much",
+        "price list",
+        "product pricing",
+        "cost of products",
+        "price range",
+        "affordable",
+        "expensive",
+        "budget",
+        "pricing structure",
+        "quote",
+        "get quote",
+        "price estimate",
+        "cost information",
+      ],
+      responses: [
+        "We understand pricing is an important consideration. Pharmacia offers competitive pricing while maintaining the highest quality standards. For specific product pricing, we recommend:\n\n• Contacting our sales team for detailed quotations\n• Discussing volume-based pricing for larger orders\n• Exploring our value-added service packages\n\nOur pricing reflects the premium quality and reliability of our pharmaceutical products.",
+        "Pharmacia provides value-based pricing for all our pharmaceutical solutions. To receive accurate pricing information:\n\n📞 Contact our sales team at +965 1234 5678\n📧 Email your specific requirements to info@pharmacia.com\n💼 Schedule a consultation for customized pricing\n\nWe offer transparent pricing structures and can discuss options that fit your budget and requirements.",
+      ],
+    },
+
+    // Enhanced ordering process
+    ordering: {
+      patterns: [
+        "order",
+        "how to order",
+        "purchase",
+        "buy",
+        "procurement",
+        "place order",
+        "ordering process",
+        "how to buy",
+        "purchase process",
+        "get products",
+        "acquire products",
+        "order procedure",
+        "buying process",
+        "procurement process",
+        "order steps",
+      ],
+      responses: [
+        "The ordering process at Pharmacia is designed for efficiency and reliability:\n\n1. **Consultation**: Discuss your requirements with our team\n2. **Product Selection**: Choose from our certified product range\n3. **Quotation**: Receive detailed pricing and delivery information\n4. **Order Confirmation**: Formalize your purchase requirements\n5. **Documentation**: Complete necessary regulatory documentation\n6. **Delivery**: Scheduled delivery with quality assurance\n7. **Support**: Ongoing after-sales service and support\n\nContact us to initiate your order process.",
+        "To place an order with Pharmacia:\n\n📋 **Step 1**: Contact our sales team with your requirements\n💬 **Step 2**: Product consultation and selection guidance\n💰 **Step 3**: Receive comprehensive quotation\n✅ **Step 4**: Order confirmation and documentation\n🚚 **Step 5**: Scheduled delivery with tracking\n🛡️ **Step 6**: Quality verification upon receipt\n🔧 **Step 7**: Continuous support and service\n\nOur team ensures a seamless ordering experience from start to finish.",
+      ],
+    },
+
+    // Enhanced delivery information
+    delivery: {
+      patterns: [
+        "delivery",
+        "shipping",
+        "transport",
+        "logistics",
+        "how delivered",
+        "delivery time",
+        "shipping time",
+        "delivery process",
+        "shipping process",
+        "transportation",
+        "lead time",
+        "delivery schedule",
+        "when delivered",
+        "delivery options",
+        "shipping methods",
+        "logistics process",
+      ],
+      responses: [
+        "Pharmacia maintains a robust delivery system ensuring:\n\n⏱️ **Timely Delivery**: Efficient scheduling and tracking\n🌡️ **Temperature Control**: Climate-sensitive product protection\n🛡️ **Security**: Secure transportation protocols\n📋 **Documentation**: Complete delivery documentation\n🔍 **Verification**: Quality checks upon delivery\n🌍 **Regional Coverage**: Service across Kuwait and beyond\n\nOur logistics team coordinates each delivery to meet your specific timeline and quality requirements.",
+        "Our delivery framework includes:\n\n• **Scheduling**: Coordinated delivery timelines\n• **Temperature Management**: Critical for vaccine and sensitive products\n• **Security Measures**: Product integrity throughout transit\n• **Tracking Systems**: Real-time delivery monitoring\n• **Quality Assurance**: Final verification before handover\n• **Documentation Support**: Complete regulatory compliance\n• **Flexible Options**: Adaptable to your operational needs\n\nWe ensure your pharmaceutical products arrive in perfect condition, every time.",
+      ],
+    },
+
+    // Default response - Enhanced
     default: {
       responses: [
-        "I'm not sure I understand. Could you please rephrase your question?",
-        "I apologize, but I don't have the answer to that specific question. Would you like to contact our support team for assistance?",
-        "That's an interesting question. For detailed information, I recommend contacting our support team at +965 1234 5678 who can help you further.",
-        "I'm still learning about all aspects of Pharmacia. For this question, our support team would be better equipped to assist you.",
+        "Thank you for your inquiry. For detailed information about this specific question, I recommend contacting our support team at +965 1234 5678 who can provide comprehensive assistance.",
+        "I appreciate your question. To ensure you receive the most accurate and detailed information, our support team would be best equipped to assist you with this matter.",
+        "That's an excellent question. For specialized information on this topic, I suggest reaching out to our expert team who can provide you with detailed guidance.",
+        "I understand your interest in this area. For comprehensive details, our professional staff is available to address your specific requirements and provide tailored solutions.",
       ],
     },
   };
 
+  // Enhanced response selection with professional formatting
+  function findResponse(userInput) {
+    const input = userInput.toLowerCase().trim();
+
+    // Check for exact matches in patterns first
+    for (const category in knowledgeBase) {
+      if (knowledgeBase[category].patterns) {
+        for (const pattern of knowledgeBase[category].patterns) {
+          if (input.includes(pattern.toLowerCase())) {
+            const responses = knowledgeBase[category].responses;
+            return responses[Math.floor(Math.random() * responses.length)];
+          }
+        }
+      }
+    }
+
+    // If no match found, return default response
+    const defaultResponses = knowledgeBase.default.responses;
+    return defaultResponses[
+      Math.floor(Math.random() * defaultResponses.length)
+    ];
+  }
+
+  // Enhanced conversation flow with professional tone
+  function handleUserMessage(message) {
+    const response = findResponse(message);
+
+    // Add small delay for more natural conversation feel
+    setTimeout(() => {
+      displayResponse(response);
+    }, 1000);
+
+    return response;
+  }
+
+  // Function to display response (you'll need to integrate this with your UI)
+  function displayResponse(response) {
+    // This function should display the response in your chat interface
+    console.log("Pharmacia:", response);
+
+    // Example implementation:
+    // const chatContainer = document.getElementById('chat-container');
+    // const responseElement = document.createElement('div');
+    // responseElement.className = 'response';
+    // responseElement.textContent = response;
+    // chatContainer.appendChild(responseElement);
+  }
+
+  // Example usage with enhanced professional interactions
+  console.log("User: Hello");
+  console.log("Pharmacia:", handleUserMessage("Hello"));
+
+  console.log("User: How are you today?");
+  console.log("Pharmacia:", handleUserMessage("How are you today?"));
+
+  console.log("User: What products do you offer?");
+  console.log("Pharmacia:", handleUserMessage("What products do you offer?"));
+
+  console.log("User: How can I contact you?");
+  console.log("Pharmacia:", handleUserMessage("How can I contact you?"));
+
+  console.log("User: Thank you for your help");
+  console.log("Pharmacia:", handleUserMessage("Thank you for your help"));
+
+  console.log("User: Goodbye");
+  console.log("Pharmacia:", handleUserMessage("Goodbye"));
   // Generate bot response based on user input
   function generateResponse(message) {
     const lowerMessage = message.toLowerCase();
